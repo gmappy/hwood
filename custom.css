@@ -1,0 +1,653 @@
+:root {
+    --color-white: #fff;
+    --gaming-primary-color: #121827;
+    --luckyfish-primary-color: #00252b;
+    --luckyfish-border-color: #00363e;
+    --luckyfish-yellow-color: #ffd833;
+    --luckyfish-secondary-color: #f05376;
+    --luckyfish-text-color: #bbced1;
+}
+
+.change-contact-number {
+    position: relative;
+}
+
+.change-contact-number::before {
+    content: "087 353 7634";
+}
+
+body.luckyfish .change-contact-number::before {
+    content: "087 365 0651";
+}
+
+.wrapper {
+    max-width: 460px;
+    margin: 0 auto;
+}
+
+body {
+    background: transparent url("bg-full.png") no-repeat top center/cover fixed;
+}
+
+@media (max-width: 768px) {
+    body {
+        background: transparent url("bg-medium.png") no-repeat top center/cover fixed;
+    }
+}
+
+@media (max-width: 470px) {
+    body {
+        background: transparent url("bg-medium.png") no-repeat top center/100% 100vh;
+    }
+
+    .wrapper {
+        margin: 0 10px;
+    }
+}
+.header-premium,
+.header-luckyfish {
+    display: none;
+}
+.header, .bg-purple-500 {
+    background-color: #693697;
+}
+
+.close-btn svg {
+    right: 15px;
+    top: 18px;
+    font-size: 1.5rem;
+}
+
+i.bi {
+    right: 0;
+    padding: 5px 20px;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+
+/* Website */
+
+body.web {
+    background: transparent url("bg-640.png") no-repeat top center/cover fixed;
+}
+
+body.web .wrapper {
+    max-width: 600px;
+    margin: 0 10px;
+}
+
+@media (min-width: 640px) {
+    body.web {
+        background: transparent url("bg-640.png") no-repeat top center/cover fixed;
+    }
+
+    body.web .wrapper {
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 768px) {
+    body.web {
+        background: transparent url("bg-768.png") no-repeat top center/cover fixed;
+    }
+}
+
+@media (min-width: 1280px) {
+    body.web {
+        background: transparent url("bg-1280.png") no-repeat top center/cover fixed;
+    }
+}
+
+@media (min-width: 1536px) {
+    body.web {
+        background: transparent url("bg-1536.png") no-repeat top center/cover fixed;
+    }
+}
+
+body.web .header {
+    background-color: #111111;
+}
+.log-in ::placeholder {
+    opacity: 0;
+}
+
+body.web .bg-gray-100 {
+    background-color: #1e1e1e;
+}
+
+body.web .bg-gray-100 .text-gray-900 {
+    color: #fff;
+}
+
+body.web .bg-gray-100 .text-gray-600, body.web .bg-gray-100 .text-gray-500 {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+body.web .bg-gray-100 .text-sm.text-gray-500 a {
+    color: #fcbf12;
+}
+
+/* PREMIUM START */
+body.premium .header-logo {
+    content: url("hwb-logo.png");
+    padding-bottom: 20px;
+}
+
+body.premium {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent url("premium-bg-full.png") no-repeat top left/ 100% 100% fixed;
+}
+body.premium .underline {
+    color: black !important;
+}
+
+body.premium  .header {
+    display: none;
+}
+body.premium .header-premium svg {
+    height: 15px;
+}
+
+body.premium div {
+    background-color: rgb(244, 246, 253, 0.9);
+    border-radius: 0.75rem;
+}
+
+body.premium .header-premium {
+    display: block;
+    background-color: transparent;
+    border-style: solid;
+    border-bottom: none;
+    border-width: 1px;
+    border-color: rgb(128, 100, 230);
+    border-radius: 0.75rem 0.75rem 0rem 0rem;
+}
+body.premium .bg-purple-500 {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(128, 100, 230);
+    border-radius: 0.75rem;
+    background: linear-gradient(rgb(132, 75, 197), rgb(125, 119, 255));
+    box-shadow: rgba(0, 0, 0, 0.1) 3px 3px 4px;
+}
+
+body.premium .reset-options .bg-purple-500 {
+    box-shadow: rgba(0, 0, 0, 0.1) 3px 3px 4px;
+    background: rgb(255, 255, 255) !important;
+    color: rgb(128, 100, 230) !important;
+    border-color: rgb(128, 100, 230) !important;
+}
+
+body.premium .reset-password .border-gray-300, body.premium .cell-number .border-gray-300 {
+    border-radius: 0.75rem;
+}
+
+    
+body.premium .bg-gray-100 {
+    background-color: transparent;
+    border-style: solid;
+    border-top: none;
+    border-width: 1px;
+    border-color: rgb(128, 100, 230);
+    border-radius: 0rem 0rem 0.75rem 0.75rem;
+    padding: 5px 50px 50px 50px;
+}
+
+body.premium .reset-password, body.premium .cell-number {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center text */
+}
+body.premium .log-in .bg-gray-100 .text-gray-900 {
+    display: none;
+}
+body.premium .bg-gray-100 .text-gray-900 {
+    color: rgb(92, 45, 145);
+}
+
+
+body.premium .bg-gray-100 .text-gray-600, body.web .bg-gray-100 .text-gray-500 {
+    color: rgb(92, 45, 145);
+}
+
+body.premium .bg-gray-100 p.text-sm.text-gray-500 a {
+    color: #020381;
+}
+
+body.premium .bg-gray-100 .premium-hwb-logo {
+    display: flex !important;
+}
+
+body.premium .id-number-button:hover, body.premium .passport-number-button:hover {
+    background-color: #1e1e1e;
+}
+
+body.premium .hover\:bg-purple-600:hover {
+    color: rgb(255, 255, 255);
+    background: linear-gradient(rgb(132, 75, 197), rgb(125, 119, 255));
+    box-shadow: rgb(235, 227, 251) 0px 5px 0px -2px;
+}
+
+body.premium .bg-gray-100 .text-sm.text-gray-500 a, body.premium .text-gray-500 a {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+body.premium .text-gray-500 {
+    text-align: center;
+    color: rgb(92, 45, 145);
+}
+
+body.premium .bg-purple-500:hover {
+    color: rgb(255, 255, 255) !important;
+    background: linear-gradient(rgb(132, 75, 197), rgb(125, 119, 255)) !important;
+    box-shadow: rgb(235, 227, 251) 0px 5px 0px -2px !important;
+}
+
+body.premium .wrapper {
+    max-width: 600px;
+}
+
+body.premium .outline-none {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(128, 100, 230);
+    border-radius: 0.75rem;
+}
+body.premium .log-in label {
+    display: none;
+}
+
+body.premium .log-in ::placeholder {
+    opacity: 100;
+}
+
+@media (max-width: 768px) {
+    body.premium {
+        background: transparent url("premium-bg-small.png") no-repeat top left/cover fixed !important;
+    }
+
+    body.premium .wrapper {
+        margin: 0 10px;
+    }
+
+}
+/* END PREMIUM */
+
+/* BetFair START */
+body.betfair .header-logo {
+    content: url("logo.png");
+    padding: 10px 0px;
+}
+
+body.betfair {
+    background: transparent url("urn:scrapbook:download:error:https://id.hollywoodbets.net/images/betfair/bg-1536.png") no-repeat top center/cover fixed;
+}
+
+body.betfair .header {
+    background-color: #fdb614;
+}
+
+body.betfair .bg-purple-500 {
+    background-color: #fdb614;
+    color: black;
+    font-weight: bold;
+}
+
+body.betfair .bg-gray-100 {
+    background-color: #1e1e1e;
+}
+
+body.betfair .bg-gray-100 .text-gray-900 {
+    color: #fff;
+}
+
+body.betfair .bg-gray-100 .text-gray-600, body.web .bg-gray-100 .text-gray-500 {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+body.betfair .bg-gray-100 p.text-sm.text-gray-500 a {
+    color: #fdb614;
+}
+
+body.betfair .id-number-button:hover, body.betfair .passport-number-button:hover {
+    background-color: #1e1e1e;
+}
+
+body.betfair .hover\:bg-purple-600:hover {
+    background-color: #1e1e1e;
+}
+
+body.betfair .bg-gray-100 .text-sm.text-gray-500 a, body.betfair .text-gray-500 a {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+body.betfair .text-gray-500 {
+    color: rgba(255, 255, 255, 0.8);
+}
+body.betfair .bg-purple-500:hover {
+    background: #333;
+    color: #fff;
+}
+body.betfair .wrapper {
+    max-width: 600px;
+}
+
+@media (max-width: 768px) {
+    body.betfair {
+        background: transparent url("bg-medium-1.png") no-repeat top center/cover fixed !important;
+    }
+    body.betfair .wrapper {
+        margin: 0 10px;
+    }
+}
+/* END BetFair */
+
+
+/* Cape Racing START */
+body.cape-racing .header-logo {
+    content: url("cape-racing-logo.png");
+    padding: 10px 0px;
+}
+
+body.cape-racing {
+    background: transparent url("bg-full-1.png") no-repeat top center/cover fixed;
+}
+
+    body.cape-racing .header {
+        background-color: #020381;
+    }
+
+    body.cape-racing .bg-purple-500 {
+        background-color: #020381;
+        color: var(--color-white);
+        font-weight: bold;
+    }
+
+    body.cape-racing .bg-gray-100 {
+        background-color: #1e1e1e;
+    }
+
+        body.cape-racing .bg-gray-100 .text-gray-900 {
+            color: #fff;
+        }
+
+        body.cape-racing .bg-gray-100 .text-gray-600, body.web .bg-gray-100 .text-gray-500 {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        body.cape-racing .bg-gray-100 p.text-sm.text-gray-500 a {
+            color: #020381;
+        }
+
+    body.cape-racing .id-number-button:hover, body.betfair .passport-number-button:hover {
+        background-color: #1e1e1e;
+    }
+
+    body.cape-racing .hover\:bg-purple-600:hover {
+        background-color: #1e1e1e;
+    }
+
+    body.cape-racing .bg-gray-100 .text-sm.text-gray-500 a, body.betfair .text-gray-500 a {
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    body.cape-racing .text-gray-500 {
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    body.cape-racing .bg-purple-500:hover {
+        background: #333;
+        color: #fff;
+    }
+
+    body.cape-racing .wrapper {
+        max-width: 600px;
+    }
+
+@media (max-width: 768px) {
+    body.cape-racing {
+        background: transparent url("bg-medium-2.png") no-repeat top center/cover fixed !important;
+    }
+
+        body.cape-racing .wrapper {
+            margin: 0 10px;
+        }
+}
+/* END Cape Racing */
+
+/* 
+    GAMING PLATFORM 
+*/
+
+body.gaming, body.gaming input.bg-white {
+    background: var(--gaming-primary-color);
+}
+    body.gaming .header {
+        background: var(--gaming-primary-color);
+    }
+    body.gaming .shadow-lg {
+        box-shadow: none;
+    }
+    body.gaming .bg-gray-100 {
+        background-color: var(--gaming-primary-color);
+    }
+    body.gaming h1.title-font.font-medium.text-3xl.text-gray-900.py-3 {
+        color: var(--color-white);
+    }
+    body.gaming .leading-7.text-gray-600,
+    body.gaming .text-gray-500 {
+        color: #9b9b9b;
+    }
+    body.gaming input.bg-white {
+        border-color: #394151;
+        color: #ccd5e1;
+    }
+    body.gaming i.bi {
+        color: #ccd5e1;
+    }
+/* 
+    @END
+    GAMING PLATFORM
+*/
+
+/* 
+    LuckyFish PLATFORM 
+*/
+body.luckyfish {
+    background: var(--luckyfish-primary-color) url("urn:scrapbook:download:error:https://id.hollywoodbets.net/images/luckyfish/luckyfish-background.webp") no-repeat top center/cover fixed !important; /* If Comet goes down fallback */
+    background: var(--luckyfish-primary-color) url("lucky-fish-background.webp") no-repeat top center/cover fixed !important;
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    body.luckyfish {
+        background: var(--luckyfish-primary-color) url("urn:scrapbook:download:error:https://id.hollywoodbets.net/images/luckyfish/luckyfish-background-sm.webp") no-repeat top center/cover fixed !important; /* If Comet goes down fallback */
+        background: var(--luckyfish-primary-color) url("luckyfish-bg.webp") no-repeat top center/cover fixed !important;
+    }
+}
+
+body.luckyfish .header-logo {
+    content: url("lucky_fish_logo_28bbf4bac5.svg");
+    padding-bottom: 20px;
+    max-width: 100%;
+    position: absolute;
+}
+
+body.luckyfish a.mb-4.text-center.text-white.bg-purple-500.border-0.py-2.px-8.focus\:outline-none.hover\:bg-purple-600.rounded.text-lg {
+    background-color: var(--luckyfish-yellow-color);
+    color: var(--luckyfish-primary-color);
+    font-weight: 500;
+}
+
+    body.luckyfish a.mb-4.text-center.text-white.bg-purple-500.border-0.py-2.px-8.focus\:outline-none.hover\:bg-purple-600.rounded.text-lg:hover {
+        background: var(--luckyfish-secondary-color);
+        color: var(--color-white);
+        border-color: var(--luckyfish-secondary-color);
+    }
+
+.luckyfish .text-\[\#2f67f7\] {
+    color: var(--luckyfish-yellow-color);
+}
+
+body.luckyfish .log-in .bg-gray-100 {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+body.luckyfish .header-luckyfish {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+body.luckyfish .log-in .bg-gray-100,
+body.luckyfish .header-luckyfish,
+body.luckyfish .bg-gray-100 {
+    background: var(--luckyfish-primary-color);
+}
+
+body.luckyfish input::placeholder {
+    color: var(--luckyfish-text-color);
+    background: var(--luckyfish-primary-color);
+}
+
+body.luckyfish .text-red-700 {
+    color: var(--luckyfish-secondary-color);
+}
+
+body.luckyfish input[type="text"],
+body.luckyfish input[type="password"],
+body.luckyfish input[type="email"],
+body.luckyfish select {
+    color: #f0f0f0;
+    background: var(--luckyfish-primary-color);
+    border-color: var(--luckyfish-border-color);
+}
+
+    body.luckyfish input[type="text"]:hover, body.luckyfish input[type="password"]:hover, body.luckyfish input[type="email"]:hover {
+        border-color: var(--luckyfish-yellow-color);
+    }
+
+    body.luckyfish input[type="text"]:focus, body.luckyfish input[type="password"]:focus, body.luckyfish input[type="email"]:focus {
+        box-shadow: none;
+    }
+
+
+body.luckyfish #otpdiv input[type="text"] {
+    background: var(--color-white);
+    color: var(--gaming-primary-color);
+}
+    body.luckyfish #otpdiv input[type="text"]:hover {
+        border-color: var(--color-white);
+    }
+
+    body.luckyfish h1.title-font.font-medium.text-3xl.text-gray-900.py-3 {
+        display: none;
+        visibility: hidden;
+    }
+
+body.luckyfish .text-gray-600,
+body.luckyfish .text-gray-500,
+body.luckyfish a.close-btn.relative,
+body.luckyfish i.bi {
+    color: var(--luckyfish-text-color);
+}
+
+body.luckyfish button.bg-purple-500 {
+    background-color: var(--luckyfish-yellow-color);
+    color: var(--luckyfish-primary-color);
+    font-weight: 500;
+}
+
+    body.luckyfish button.bg-purple-500:hover {
+        background: var(--luckyfish-secondary-color);
+        border-color: var(--luckyfish-secondary-color);
+        color: var(--color-white);
+        cursor: pointer;
+    }
+
+body.luckyfish .wrapper.shadow-lg {
+    box-shadow: none;
+}
+
+body.luckyfish .header {
+    display: none;
+}
+
+body.luckyfish .header-luckyfish {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+body.luckyfish a.close-btn.relative {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+body.luckyfish .reset-password .id-number-button:hover,
+body.luckyfish .reset-password .passport-number-button:hover,
+body.luckyfish .reset-password #btnSms:hover,
+body.luckyfish .reset-password #btnEmail:hover,
+body.luckyfish .cell-number .bg-purple-500:hover {
+    background: var(--luckyfish-primary-color) !important;
+    color: var(--color-white);
+    border: 1px solid var(--luckyfish-yellow-color);
+}
+
+body.luckyfish .reset-password .bg-purple-500,
+body.luckyfish #btnLogin {
+    background: var(--luckyfish-yellow-color);
+    border: 1px solid var(--luckyfish-yellow-color);
+    color: var(--luckyfish-primary-color);
+}
+    body.luckyfish #btnLogin:hover {
+        background: var(--luckyfish-secondary-color);
+        border-color: var(--luckyfish-secondary-color);
+        color: var(--color-white);
+    }
+
+    body.luckyfish h1.title-font.font-medium.text-5l.text-gray-900.py-3 {
+        color: var(--luckyfish-text-color);
+        padding-top: 0;
+        padding-bottom: 25px;
+    }
+
+body.luckyfish .cell-number .bg-purple-500 {
+    background: var(--luckyfish-yellow-color);
+    border: 1px solid var(--luckyfish-yellow-color);
+    color: var(--luckyfish-primary-color);
+}
+
+body.luckyfish .cell-number .hover\:bg-purple-600:hover {
+    background: var(--luckyfish-primary-color) !important;
+    color: var(--color-white);
+    border: 1px solid var(--luckyfish-yellow-color);
+}
+body.luckyfish .wrapper.shadow-lg .body-font .flex.flex-wrap .bg-gray-100.bg-blur.flex.flex-col.w-full.p-3 .text-gray-900 {
+    color: var(--color-white);
+}
+    body.luckyfish .wrapper.shadow-lg .body-font .flex.flex-wrap .bg-gray-100.bg-blur.flex.flex-col.w-full.p-3 .text-gray-900 .otp-link,
+    body.luckyfish .wrapper.shadow-lg .body-font .flex.flex-wrap .bg-gray-100.bg-blur.flex.flex-col.w-full.p-3 .otp-link {
+        color: var(--luckyfish-yellow-color)
+    }
+body.luckyfish .wrapper.shadow-lg .body-font .flex.flex-wrap .bg-gray-100.bg-blur.flex.flex-col.w-full.p-3 .timer-position {
+    position: relative;
+    text-align: right;
+    top: 0;
+    right: 0;
+    padding: 5px;
+}
+/* 
+    @END
+    LUCKYFISH PLATFORM
+*/
